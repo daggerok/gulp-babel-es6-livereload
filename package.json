@@ -1,0 +1,60 @@
+{
+  "name": "gulp-babel-es6-livereload",
+  "version": "1.0.0",
+  "description": "using gulp-babel es6 with livereload",
+  "main": "src/main.js",
+  "scripts": {
+    "gulp": "gulp",
+    "pregulp": "npm i",
+    "clean": "rm -rf dist",
+    "test": "npm run gulp",
+    "prestart": "npm test",
+    "start": "gulp watch"
+  },
+  "author": "Maksim Kostromin",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babelify": "^7.2.0",
+    "bootstrap": "^3.3.6",
+    "browserify": "^13.0.0",
+    "colors": "^1.1.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-server-livereload": "^1.7.0",
+    "jquery": "^2.2.1",
+    "require-dir": "^0.3.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daggerok/gulp-babel-es6-livereload.git"
+  },
+  "keywords": [
+    "gulp",
+    "babel",
+    "es6",
+    "gulp-babel",
+    "livereload",
+    "gulp-server-livereload",
+    "browserify",
+    "babelify",
+    "jquery",
+    "bootstrap"
+  ],
+  "bugs": {
+    "url": "https://github.com/daggerok/gulp-babel-es6-livereload/issues"
+  },
+  "homepage": "https://github.com/daggerok/gulp-babel-es6-livereload#readme"
+}
