@@ -4,5 +4,5 @@ gulp.task('watch', ['default'], () => {
   livereload.listen({basePath: srcDir})
   gulp.watch(`${srcDir}/**/*.js`, ['js'])
   gulp.watch(`${srcDir}/**/*.css`, ['css'])
-  gulp.watch(`${srcDir}/**/*.*`, ['default'])
+  gulp.watch(`${srcDir}/**/*.html`, ['default'])
 })
