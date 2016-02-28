@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "description": "using gulp-babel es6 with livereload",
   "main": "src/main.js",
+  "local-web-server": {
+    "port": 3000,
+    "forbid": [
+      "*.json",
+      "*.ts",
+      "*.md",
+      "*.yml",
+      "*.babel.js",
+      ".gitignore"
+    ],
+    "no-cache": true
+  },
   "scripts": {
     "gulp": "gulp",
     "pregulp": "npm i",
-    "clean": "rm -rf dist",
+    "rm": "rm -fr dist",
     "test": "npm run gulp",
     "prestart": "npm test",
-    "start": "gulp watch"
+    "start": "gulp watch & ws"
   },
   "author": "Maksim Kostromin",
   "license": "ISC",
@@ -24,18 +36,14 @@
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.1",
-    "gulp-server-livereload": "^1.7.0",
+    "gulp-livereload": "^3.8.1",
+    "local-web-server": "^1.1.1",
     "jquery": "^2.2.1",
     "require-dir": "^0.3.0",
     "vinyl-source-stream": "^1.1.0"
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ],
-    "plugins": [
-      "transform-runtime"
-    ]
+    "presets": ["es2015"]
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 import Person from './modules/Person'
-import {render} from './modules/Person/View'
+import {render} from './modules/dom/Utils'
 
 let
 date = new Date,
