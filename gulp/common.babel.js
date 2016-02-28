@@ -25,10 +25,10 @@ port      = 3000,
 buildDir  = 'dist',
 mainJs    = 'main.es6',
 mainCss   = 'main.css',
-bundleCss = 'bundle.css',
 bundleJs  = 'bundle.js',
+bundleCss = 'bundle.css',
 vendorDir = 'node_modules',
-cssFiles = [
+cssFiles  = [
   `${vendorDir}/bootstrap/dist/css/bootstrap.css`,
   `${srcDir}/${mainCss}`
 ]
