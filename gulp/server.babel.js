@@ -7,7 +7,6 @@ gulp.task('server', () => {
       open: true,
       log: 'debug',
       livereload: {
-        port: 35729,
         clientConsole: true
       }
     }))
